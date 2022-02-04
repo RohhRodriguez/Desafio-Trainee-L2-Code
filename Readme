@@ -2,14 +2,14 @@
 #Linguagem utilizada: Python
 
 DESAFIO 1: BANCO DE DADOS
-- PARTE 1: Retornar uma lista que apresente o nome das categorias e a quantidade de produtos totais em cada categoria.
+- PARTE 1: 
 Identifiquei duas inconsistências em relação aos OUTPUTS apresentados como exemplo.
 No primeiro desafio de Banco de Dados, a orDem dos registros da TABLE na coluna ID não batem com o obtido;
 fiz diversos testes, ordenando diferentemente e mesmo assim não dá para chegar no mesmo resultado.
 No entanto, apresentei 2 formas distintas de fazer o filtro, uma agrupando por nome e a outra por ID
 e o resultado foi satisfatório.
 
-- PARTE 2: Apresentar um relatório com as 4 categorias que mais tiveram produtos comprados.
+- PARTE 2: 
 -- Fiz o SELECT solicitado no segundo exercício como consta a seguir. Tentei de todas as formas possíveis
 -- chegar ao resultado exato esperado na saída do exemplo, mas sempre a coluna ID apresentava inconsistências.
 -- Após várias tentativas, resolvi verificar os ids passados no script de inicialização do banco que foi
