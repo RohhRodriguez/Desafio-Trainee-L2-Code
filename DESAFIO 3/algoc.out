@@ -1,0 +1,22 @@
+Constant 3
+PLUSONE
+DUP
+INC
+
+Constant -5
+MINUSONE
+DUP
+DUP
+INC
+
+Constant 1
+PLUSONE
+
+Constant 7
+PLUSONE
+DUP
+INC
+DUP
+INC
+
+
