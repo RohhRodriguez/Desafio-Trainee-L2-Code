@@ -1,0 +1,54 @@
+#Ferramenta para desenvolver os desafios: Pycharm e PostgreSQL
+#Linguagem utilizada: Python
+
+DESAFIO 1: BANCO DE DADOS
+- PARTE 1: Retornar uma lista que apresente o nome das categorias e a quantidade de produtos totais em cada categoria.
+Identifiquei duas inconsistências em relação aos OUTPUTS apresentados como exemplo.
+No primeiro desafio de Banco de Dados, a orDem dos registros da TABLE na coluna ID não batem com o obtido;
+fiz diversos testes, ordenando diferentemente e mesmo assim não dá para chegar no mesmo resultado.
+No entanto, apresentei 2 formas distintas de fazer o filtro, uma agrupando por nome e a outra por ID
+e o resultado foi satisfatório.
+
+- PARTE 2: Apresentar um relatório com as 4 categorias que mais tiveram produtos comprados.
+-- Fiz o SELECT solicitado no segundo exercício como consta a seguir. Tentei de todas as formas possíveis
+-- chegar ao resultado exato esperado na saída do exemplo, mas sempre a coluna ID apresentava inconsistências.
+-- Após várias tentativas, resolvi verificar os ids passados no script de inicialização do banco que foi
+-- disponibilizado originalmente. Lá eu constatei que o ID do registro da categoria "GAMER" estava realmente
+-- inconsistente com o resultado esperado no arquivo original.
+-- No exercício notei que foi ordenado por SUM e apresenta como exemplo as sídas na coluna ID (1, 8, 7, 6),
+-- entretanto o registro gamer foi inicializado com o ID 10, assim sendo o resultado sempre será (1, 10, 7, 6).
+-- De forma resumida, utilizando os dados originalmente passados no desafio seria impossível ter o retorno como
+-- no exemplo de saída do eercício e para chegar ao resultado esperado, eu precisaria alterar o ID já inserido
+-- originalmente no arquivo, mas creio que foge da proposta do teste.
+-- O INSERT incorreto se encontra no script "SQLTreinee22.sql" na linha 46 para conferência do exposto acima.
+
+DESAFIO 2:
+--Identifiquei inconsistência na saída do verbo "Oficinen", que na saída do exemplo é apresentada como não verbo,
+--mas na verdade é um verbo e está conjugado na 3ª pessoa do presente.
+
+DESAFIO 3:
+--Identifiquei inconsistência entre o exemplo de saída do exercício 3 em relação ao número "-5".
+--No exercício, os comandos resultam em um número maior que o passado, ou seja "-11". Então abaixo apresento
+--detalhadamente a diferença dos dois Outputs: o do exemplo no exercício e o meu.
+--Na saída do meu, notem que houve mais eficiência.
+
+SAÍDA NO EXERCÍCIO:
+Constant -5
+MINUSONE (-1)
+DUP      (-1*2 = -2)
+DUP      (-2*2 = -4)
+INC      (-4-1 = -5)
+DUP      (-5*2 = -10)
+INC      (-10-1 = -11)
+Resultado seria ""-11" e não "-5"
+
+SAÍDA NO MEU CÓDIGO:
+Constant -5
+MINUSONE (-1)
+DUP      (-1*2 = -2)
+DUP      (-2*2 = -4)
+INC      (-4+2 = -5)
+Resultado seria de "-5", como esperado.
+
+Att,
+Rônica CS Rodrigues - Linkedin: https://www.linkedin.com/in/ronicacsrodrigues/

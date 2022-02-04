@@ -1,5 +1,6 @@
-count = 0
+count = 0 #Iniciando o contador
 
+#Refatorei em alguns métodos para ficar mais legível o código.
 def plus_one():
     global count
     algoc_out.write('PLUSONE\n')
@@ -38,9 +39,14 @@ def plus_or_minus(num):
     else:
         minus_one()
 
+#abertura do arquivo
 algoc_in = open('algoc.in', 'r')
 algoc_out = open('algoc.out', 'w')
 
+#O primeiro passo é identificar se o número é positivo ou negativo e depois se é par ou ímpar,
+#pois, quando o número é par, a maneira mais eficiente será INC e depois DUP.
+#Ex.: número: 10 => INC(+1) = resultado: 2 => DUP(x2)=> Resultado: 10. Saída: INC, DUP
+#Lógica quando número ímpar segue a mesma lógica, mas inversa.
 for line in algoc_in.readlines():
     count = 0
     num = int(line.strip('\n'))
@@ -67,5 +73,6 @@ for line in algoc_in.readlines():
             break
     algoc_out.write('\n')
 
+#Fecgamento do arquivo
 algoc_in.close()
 algoc_out.close()
